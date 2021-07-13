@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AZRUL'S WEBSITE</title>
+	<meta name="viewport" conten="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['My Skills', 'Power Percentage',],
+        ['Teamwork , TM', 95],
+        ['Computer, Comp', 80],
+        ['Editing, Edit', 65],
+        ['Sports, SP', 75],
+      ]);
+
+      var options = {
+        title: 'Skills That I Can Do',
+        chartArea: {width: '50%'},
+        hAxis: {
+          title: 'Percentage (100%)',
+          minValue: 0
+        },
+        vAxis: {
+          title: 'My Skills'
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+    </script>
+
+</head>
+<body>
+<!-----Navigation Bar----->
+	<section id="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="azrul.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Biodata.html">BIODATA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Education.html">EDUCATION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Skills.html">SKILLS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Experience.html">EXPERIENCE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Friends.html">FRIENDS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">CONTACTS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+		</nav>
+	</section>
+  <!------Skills---->
+
+  <section id="Skill">
+  <div class="container">
+     <h1>My Skills</h1>
+
+  <div id="chart_div" class="chart"></div>
+
+  <div class="skills">
+   <h2>INFORMATION</h2>
+        <article class="POST 1">
+      <h3>1. TEAMWORK SKILLS.</h3>
+      <P>Teamwork skills are very important skills in doing a job because all jobs require cooperation in solving problems and doing things perfectly. This skill is in me because in group work, I will do the work that has been divided and do the work perfectly. When I have a problem, I will meet with my team members to ask for opinions.</P></article>
+
+    <article class="POST 2">
+      <h3>2. COMPUTER SKILLS</h3>
+      <P>I learned this skill from my primary school to university level and at this point, I am still in the process of learning because the knowledge of learning computers is very broad and constantly evolving. Computer skills that I am good at are <strong>microsoft words, powerpoint, excel and many more about microsoft, and a little about computer components</strong>. If there is a small problem about the computer, I will try to fix it first, after that I will ask more experts if it is a serious problem.</P></article>
+
+    <article class="POST 3">
+      <h3>3. EDITING SKILLS</h3>
+      <P>In this skill, I am very skilled in editing videos, photos and more. For example, edit video using good software such as <strong>Adobe Premiere Pro, Filmora, Cyberlink and more</strong>. With this skill, I hope to help and facilitate in my work later.</P></article>
+
+    <article class="POST 4">
+      <h3>4. SPORT SKILLS</h3>
+      <p>When I was still studying, I had skills in various sports such as volleyball, hockey, futsal and more. Maybe in a job not using this skill but it shows I have a passion in doing something work and work hard in perfecting the job.</p></article>
+  </div>
+
+   </div>
+  </section>
+
+
+
+
+  <!-----FOOTER----->
+<section id="footer">
+  <div class="container text-center">
+    <p>Made with <i class="fa fa-heart-o"></i> by Muhammad Azrul Mosri</p>
+  </div>
+</section>
+<!-----FOOTER END---->
+<script type="js/smooth-scroll.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="*"]')
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
